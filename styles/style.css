@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+@font-face {
+  font-family: 'Dislexy';
+  src: url('../fonts/OpenDyslexic.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --primaryColor: #03588C;
+  --secondaryColor: #03588C;
+}
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f5f5f5;
+}
+
+body.dislexy {
+  font-family: 'Dislexy';
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.presentation {
+  height: 350px;
+  background: url(../images/BACKGROUND-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.presentation .camada {
+  background: rgba(0, 0, 0, 0.13);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.presentation h1 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 2.3rem;
+  margin-bottom: 4rem;
+}
+
+.presentation a {
+  background: rgba(0, 0, 0, 0.20);
+  padding: .5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 2rem;
+  color: #fff;
+  letter-spacing: .4rem;
+  font-weight: 400;
+  transition: background .3s;
+  font-size: 1.5rem;
+}
+
+.presentation a:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.pesquisar {
+  width: 77.5vw;
+  height: 4vh;
+  margin: 0.8rem auto;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  outline: none;
+}
+.pesquisar input {
+  padding: 0 1rem;
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+.pesquisar input:focus {
+  border: 2px solid #023059;
+}
+.tipo__viagem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+.tipo__viagem a {
+  margin: 0 0.3rem 0 0;
+}
+
+.tipo__viagem .btn, .icone__pesquisar {
+  color: #fff;
+  margin: auto;
+  padding: 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 00.07rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--secondaryColor);
+  transition: background-color .5s;
+}
+
+.tipo__viagem .btn:hover {
+  background: #f7f3eb;
+  color: var(--secondaryColor);
+}
+
+.container__main {
+  margin: 5rem 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divisoria {
+  width: 40px;
+  height: 5px;
+  background-color: var(--primaryColor);
+  border-radius: 1rem;
+  margin: 0 auto;
+}
+
+.blog__post {
+  width: 100vw;
+  margin-top: 2rem;
+  padding: 1rem 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.container__main h1 {
+  font-size: 1.8rem;
+  margin: 1rem 0 1rem;
+  text-align: center;
+}
+
+.acessibilidade_container{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.acessibilidade_container div{
+  padding: 1rem 2rem 0;
+}
+
+.acessibilidade_container div p {
+  line-height: 1.5;
+}
+
+.acessibilidade_container div:first-child p + p {
+  margin-top: 1rem;
+}
+
+.container__hospedagem {
+  width: 100%;
+  background-color: #f5f5f5;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+ .container__cards {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container__cards h1{
+  font-size: 1.8rem;
+  margin: 3rem 0 1rem;
+  text-align: center;
+}
+.container__cards img{
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.hoteis{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  padding: 0;
+}
+.card__hotel {
+  display: flex;
+  padding: 1rem;
+}
+.hotel {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.conteudo {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.nome__hotel{
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.conteudo p {
+  text-align: center;
+  color: black;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.hotel_avaliacao{
+  color: #e6c000;
+  margin: 0 0 10px 0;
+  font-size: small;
+  text-align: center;
+}
+.container__cards .btn {
+  color: #fff;
+  margin: auto;
+  padding: 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.07rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  display: block;
+  width: 50%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--secondaryColor);
+  transition: 0.3s;
+}
+.container__cards .btn:hover {
+  background: #faf5f0;
+  color: var(--secondaryColor);
+}
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.7);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+
+  z-index: 2;
+
+  overflow: auto;
+}
+
+.modal {
+  width: 80vw;
+  height: 90vh;
+
+  background: #fff;
+  margin-top: 2.5rem;
+
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 1;
+
+  overflow: auto;
+
+}
+
+#paulista {
+  font-size: 0.8rem;
+  margin: auto;
+}
+
+.review {
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.3rem 0.5rem;
+  margin-bottom: 1.3rem;
+  border-radius: 0.5rem;
+  outline: none;
+  resize: none;
+}
+
+.review-area {
+  margin: 1rem;
+  text-transform: uppercase;
+}
+
+.review-area .btn {
+  color: #fff;
+  margin: auto;
+  padding: 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.07rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  display: block;
+  width: 50%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--secondaryColor);
+  transition: 0.3s;
+  margin-bottom: 1rem;
+}
+
+.review-area .btn:hover {
+  background: #faf5f0;
+  color: var(--secondaryColor);
+}
+
+.review:focus {
+  border: 2px solid #023059;
+}
+
+@media(min-width: 1040px) {
+  :root {
+    font-size: 93.75%;
+    /* 15px */
+  }
+
+  .presentation {
+    height: 400px;
+  }
+
+  .presentation h1 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .presentation a {
+    font-size: 1em;
+  }
+
+  .pesquisar input {
+    margin-bottom: 1rem;
+    width: 40vw;
+  }
+  .acessibilidade_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .blog__post {
+    width: 77vw;
+  }  
+  .hoteis{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px 0;
+  }
+}
+
+@media(max-width: 970px) {
+  html {
+    font-size: 87.5%;
+    /* 14px */
+  }
+}
+
+@media(max-width:700px) {
+  :root {
+    font-size: 75%;
+    /* 12px */
+  }
+  
+}
+
+@media(max-width: 590px) {
+  :root {
+    font-size: 62.25%
+      /* 10px */
+  }
+  
+}

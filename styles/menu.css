@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+
+.menu {
+    text-transform: uppercase;
+    font-weight: 400;
+    height: 7vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    position: fixed;
+    background:var(--primaryColor);
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.3);
+    animation: show .5s forwards;
+  }
+
+  .menu .logo a, 
+  .mobile .logo a{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: Lato;
+  }
+  
+  .menu .options ul {
+    list-style: none;
+    display: flex;
+    font-size: 1rem;
+  }
+  
+  .menu .options ul li {
+    cursor: pointer;
+  }
+  
+  .menu .options ul li + li {
+    margin-left: 2rem;
+  }
+  
+  .menu .options ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  @keyframes show {
+    from {
+      opacity: 0;
+      transform: translate3d(-30px, 0, 0)
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0)
+    }
+  }
+
+  .acessibilidade {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .acessibilidade img {
+    height: 40px;
+    margin-left: 5px;
+  }
+
+  .optionsAcessibilidade {
+    position: fixed;
+    top: 46px;
+    right: -100%;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    transition: right .5s;
+  }
+
+  .optionsAcessibilidade.disable {
+    right: 10px;
+  }
+
+  .optionsAcessibilidade h2:first-child {
+    margin-bottom: 1rem;
+  }
+
+  .optionsAcessibilidade .optionsTexto {
+    display: flex;
+  }
+
+  .optionsAcessibilidade .optionsTexto div + div {
+    margin-left: 1rem;
+  }
+
+  .optionsAcessibilidade .optionsTexto div {
+    cursor: pointer;
+  }
+
+  .optionsAcessibilidade hr {
+    border: none;
+    height: 1px;
+    background: #c1c1c1;
+  }
+
+  .optionsAcessibilidade .dislexia {
+    cursor: pointer;
+  }
+
+  .mobile{
+    display: none;
+  }
+
+  .menu-hamburguer.disable{
+    display: none;
+  } 
+
+  @media(max-width: 1024px) {
+   .menu{
+     display: none;
+   }
+
+   .mobile{
+    display: flex;
+    background-color: var(--primaryColor);
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .menu-hamburguer{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    transition: right .5s;
+  }
+  .menu-hamburguer.disable{
+    right: -100%;
+    
+  }
+  .menu-hamburguer .options a{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+  
+    
+  }
+
+  .options{
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .options ul{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20vw ;
+  }
+
+  .options ul li{
+
+    margin: 20px 10px;
+
+  }
+
+  .close{
+    padding: 10px 0 0 15px;
+  }
+
+  .close img{
+    width: 35px;
+  }
+
+
+  
+    
+  }
